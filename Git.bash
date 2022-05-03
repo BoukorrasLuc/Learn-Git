@@ -12,3 +12,14 @@ git reset [fichier]
 # ✅ Enleve le fichier de l'index, mais conserve son contenu
 git commit -m "[message descriptif]"  
 # ✅ Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions
+
+
+
+
+# Si le reset indique : Unstaged changes after reset
+git rm .gitattributes
+# ✅ Supprime le fichier .gitattributes
+git add -A
+# ✅ Ajoute tous les fichiers à l'index
+git reset --hard
+# ✅ Réinitialise le dépôt
